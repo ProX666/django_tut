@@ -1,0 +1,4 @@
+/nbproject/
+/venv/*
+db.sqlite3
+
