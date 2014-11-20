@@ -1,3 +1,7 @@
 /nbproject/
 /venv/*
 db.sqlite3
+*.pyc
+polls/*.pyc
+migrations/*.pyc
+
