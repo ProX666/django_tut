@@ -76,6 +76,7 @@ class QuestionViewTests(TestCase):
         """
         create_question(question_text="A question.", days=0)
         response = self.client.get(reverse('polls:index'))
+		# "No polls are available." is the literal response in the index.html!
         self.assertContains(response, "No polls are available.", status_code=200)
         self.assertQuerysetEqual(response.context['latest_question_list'], [])
 
